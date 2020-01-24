@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymelead.org">
+<head>
+<meta charset="UTF-8">
+<title>Station List</title>
+</head>
+<body>
+	<h1 align="center">Station List</h1>
+	<br/>
+	<a href="/">Go to Landing Page</a>
+	<br/>
+	<a href="/climate_detail">Go to Detailed Climate Page</a>
+	<table border="1" cellpadding="10" align="center">
+		<tr>
+			<th>Station Name</th>
+			<th>Date</th>
+			<th>Mean Temp</th>
+		</tr>
+			<tr th:each="station : ${stations}">
+				<td th:text="${station.stationName}">Name</td>
+				<td th:text="${station.date}">Country</td>
+				<td th:text="${station.meanTemp}">Name</td>
+			</tr>
+	</table>
+</body>
+</html>
