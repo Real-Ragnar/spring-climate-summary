@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 Thymeleaf with Java 8 
 
 ```
-Give examples
+TODO
 ```
 
 ### Installing
@@ -25,14 +25,15 @@ Clone this repository and open in Spring Tool Suite
 git clone https://github.com/Real-Ragnar/spring-climate-summary.git
 
 2. Build and run the app using maven and CLI
-
+```
 TODO
-
+```
 mvn spring-boot:run
 
 ## Running the tests
+```
 TODO
-
+```
 ## Built With
 
 * [Maven](https://maven.apache.org/) - Dependency Management
