@@ -9,6 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Thymeleaf with Java 8 
+Maven
 
 ```
 TODO
@@ -24,10 +25,25 @@ Clone this repository and open in Spring Tool Suite
 
 git clone https://github.com/Real-Ragnar/spring-climate-summary.git
 
-2. Build and run the app using maven and CLI
-```
-TODO
-```
+2. Ensure you do not have any interfering processes on port 8080
+
+To list any process listening to the port 8080:
+lsof -i:8080
+
+To kill any process listening to the port 8080:
+kill $(lsof -t -i:8080)
+
+or more violently:
+kill -9 $(lsof -t -i:8080)
+
+3. Build and run the app using maven and CLI
+Create jar file:
+mvn clean package
+
+Move jar file to convenient location
+
+cd into the path
+java -jar app.jar
 mvn spring-boot:run
 
 ## Running the tests
