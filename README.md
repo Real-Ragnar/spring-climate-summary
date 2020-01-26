@@ -36,6 +36,9 @@ kill $(lsof -t -i:8080)
 or more violently:
 kill -9 $(lsof -t -i:8080)
 
+or more specifically:
+kill -9 (pid # of the process)
+
 3. Build and run the app using maven and CLI
 Create jar file:
 mvn clean package
