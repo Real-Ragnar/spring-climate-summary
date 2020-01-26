@@ -17,10 +17,10 @@ TODO
 
 ### Installing
 
-Clone this repository and open in Spring Tool Suite 
+Clone this repository and open in project in Spring Tool Suite 
 
 
-## Running the program
+## Running the program (mac)
 1. Clone the application
 
 git clone https://github.com/Real-Ragnar/spring-climate-summary.git
@@ -39,15 +39,17 @@ kill -9 $(lsof -t -i:8080)
 or more specifically:
 kill -9 (pid # of the process)
 
-3. Build and run the app using maven and CLI
+3. Run the project via CLI
+
+Navigate to the path of the installed project (command "cd")
+Use "java -jar Quiz-0.0.1-SNAPSHOT.jar" to start the project,
+where "Quiz-0.0.1-SNAPSHOT" is the name of the generated jar file.
+
+4. Optionally build and run the app using maven and CLI
 Create jar file:
 mvn clean package
 
 Move jar file to convenient location
-
-cd into the path
-java -jar app.jar
-mvn spring-boot:run
 
 ## Running the tests
 ```
